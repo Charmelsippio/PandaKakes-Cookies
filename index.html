@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookies</title>
+  <script type="text/javascript" src="cookies.js"></script>
+</head>
+<body>
+    <h1 id="site_name">My Cookies!</h1>
+    <hr>
+
+    <h3>About Cookies</h3>
+
+    <form action="/">
+      <label for= "name"> Enter your name</label>
+      <input type="text" id="user_name">
+      <input type="submit" onclick="nameDetective()">
+    </form>
+
+    <br>
+    <br>
+
+    <script>
+
+      var cookie_vistor = Cookies.get("user_name");
+
+      if (cookie_vistor){
+        document.getElementById("site_name").innerHTML = cookie_vistor + ", Welcome back!";
+        document.body.style.backgroundColor = "orange";
+      }
+
+      function nameDetective(){
+        var taco = document.getElementById("user_name").value
+        Cookies.set("user_name", taco)
+      }
+
+    </script>
+
+
+     <a href="/animation.html"><button> Visit PandaKakes!</button></a>
+
+</body>
+</html>

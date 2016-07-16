@@ -1,0 +1,168 @@
+body{
+  width: 1000px;
+}
+
+#circle {
+width: 650px;
+height: 650px;
+background: white;
+-moz-border-radius: 300px;
+-webkit-border-radius: 300px;
+border-radius: 300px;
+}
+
+#circle1 {
+width: 200px;
+height: 200px;
+background: black;
+-moz-border-radius: 500px;
+-webkit-border-radius: 500px;
+border-radius: 500px;
+}
+
+#circle2 {
+width: 250px;
+height: 200px;
+background: black;
+-moz-border-radius: 250px / 200px;
+-webkit-border-radius: 250px / 200px;
+border-radius: 250px / 200px;
+-moz-transform:    rotate(30deg);
+-webkit-transform: rotate(30deg);
+}
+
+#circle3 {
+width: 250px;
+height: 200px;
+background: black;
+-moz-border-radius: 250px / 200px;
+-webkit-border-radius: 250px / 200px;
+border-radius: 250px / 200px;
+-moz-transform:    rotate(-215deg);
+-webkit-transform: rotate(-215deg);
+}
+
+#circle4 {
+width: 150px;
+height: 150px;
+background: white;
+-moz-border-radius: 500px;
+-webkit-border-radius: 500px;
+border-radius: 500px;
+}
+
+#circle5 {
+width: 40px;
+height: 40px;
+background: black;
+-moz-border-radius: 500px;
+-webkit-border-radius: 500px;
+border-radius: 500px;
+}
+
+#moon {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+box-shadow: 20px 20px 0 0 black;
+-webkit-transform: rotate(45deg);
+}
+
+
+/*Postioning*/
+.panda_head{
+  float: left;
+  position: absolute;
+  margin-left: 280px;
+  z-index: 1;
+}
+
+.panda_earR {
+  float: right;
+  position: relative;
+  z-index: -5
+}
+
+.panda_earL {
+  float: left;
+  position: relative;
+  margin-left: 200px;
+  z-index: -5;
+}
+
+.panda_eyeR {
+  float: right;
+  position: relative;
+  margin-right: -80px;
+  margin-top: 200px;
+  z-index: 2
+}
+
+.panda_eyeL {
+  float: left;
+  position: relative;
+  margin-left: 330px;  
+  z-index: 2;
+}
+
+.panda_eyeR_inner {
+  float: right;
+  position: relative;
+  margin-right: -156px;
+  margin-top: 60px;
+  z-index: 3;
+
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.panda_eyeL_inner {
+  float: left;
+  position: relative; 
+  margin-left: 418px;  
+  margin-top: -137px;
+  z-index: 3;
+
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+
+}
+
+.panda_pupilR {
+  float: right;
+  position: relative;
+  margin-right: 270px;
+  margin-top: -90px;
+  z-index: 3;
+}
+
+.panda_pupilL {
+  float: left;
+  position: relative;
+  margin-left: 470px;  
+  margin-top: -90px;
+  z-index: 3;
+}
+
+.panda_nose{
+  float: left;
+  position: relative;
+  margin-left: 530px;  
+  margin-top: -90px;
+  z-index: 3;
+}
+
+.panda {
+  display: none;
+}
+
+.panda_eyeL_inner:hover {
+  transform: scale(0,0);
+}
+
+.panda_eyeR_inner:hover {
+  transform: scale(0,0);
+}
+
